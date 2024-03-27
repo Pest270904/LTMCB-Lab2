@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Lab2
 {
-    public partial class Form1 : Form
+    public partial class Bai_01 : Form
     {
-        public Form1()
+        public Bai_01()
         {
             InitializeComponent();
         }
@@ -54,6 +54,11 @@ namespace Lab2
             {
                 MessageBox.Show("Wrong path");
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

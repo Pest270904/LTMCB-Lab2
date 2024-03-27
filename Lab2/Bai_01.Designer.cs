@@ -1,6 +1,6 @@
 ﻿namespace Lab2
 {
-    partial class Form1
+    partial class Bai_01
     {
         /// <summary>
         /// Required designer variable.
@@ -76,8 +76,9 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "Thoát";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form1
+            // Bai_01
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -87,7 +88,7 @@
             this.Controls.Add(this.btnWrite);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.btnRead);
-            this.Name = "Form1";
+            this.Name = "Bai_01";
             this.Text = "Ghi và đọc file";
             this.ResumeLayout(false);
 
