@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -38,26 +39,33 @@ namespace Lab2
         private void btn_Calc_Click(object sender, EventArgs e)
         {
             OutputRTB.Clear();
+            File.WriteAllText("..\\..\\..\\Text\\output_3.txt", string.Empty);
+
             if (String.IsNullOrEmpty(ReadRTB.Text))
                 MessageBox.Show("Can't find anything to calculate");
             else
                 try {
                     FileStream fws = new FileStream("..\\..\\..\\Text\\output_3.txt", FileMode.OpenOrCreate);
+
                     using (StreamWriter sw = new StreamWriter(fws, Encoding.UTF8))
                     {
-                        string[] sr = ReadRTB.Text.Split(new char[] { '\r', '\n' });
-                        foreach (var sr2 in sr)
+                        string[] str = ReadRTB.Text.Split(new[] { "\r\n", "\n" }, StringSplitOptions.None);
+                        foreach (var str2 in str)
                         {
-                            if(sr2.Contains("//") || string.IsNullOrEmpty(sr2)) {
-                                OutputRTB.AppendText(sr2 + Environment.NewLine);
-                                sw.WriteLine(sr2);
-                                continue;
-                            }
-                            OutputRTB.AppendText(calc(sr2) + Environment.NewLine);
-                            sw.WriteLine(calc(sr2));
+                            if(str2.Contains("//") || string.IsNullOrEmpty(str2))
+                                sw.WriteLine(str2);
+                            else
+                                sw.WriteLine(calc(str2));
                         }
                     }
                     fws.Close();
+
+                    FileStream frs = new FileStream("..\\..\\..\\Text\\output_3.txt", FileMode.OpenOrCreate);
+                    StreamReader sr = new StreamReader(frs);
+
+                    string content = sr.ReadToEnd();
+                    OutputRTB.Text = content;
+                    frs.Close();
                 }
                 catch (Exception ex) { 
                     MessageBox.Show(ex.Message); 
