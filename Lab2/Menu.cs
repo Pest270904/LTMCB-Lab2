@@ -37,7 +37,7 @@ namespace Lab2
 
         private void btn_Bai4_Click(object sender, EventArgs e)
         {
-            Bai_01 a = new Bai_01();
+            Bai_04 a = new Bai_04();
             a.ShowDialog();
         }
 

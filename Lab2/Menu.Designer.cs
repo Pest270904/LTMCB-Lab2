@@ -80,7 +80,7 @@
             this.btn_Bai5.Name = "btn_Bai5";
             this.btn_Bai5.Size = new System.Drawing.Size(142, 60);
             this.btn_Bai5.TabIndex = 3;
-            this.btn_Bai5.Text = "Bài 4";
+            this.btn_Bai5.Text = "Bài 5";
             this.btn_Bai5.UseVisualStyleBackColor = false;
             this.btn_Bai5.Click += new System.EventHandler(this.btn_Bai5_Click);
             // 
@@ -92,7 +92,7 @@
             this.btn_Bai4.Name = "btn_Bai4";
             this.btn_Bai4.Size = new System.Drawing.Size(142, 60);
             this.btn_Bai4.TabIndex = 4;
-            this.btn_Bai4.Text = "Bài 5";
+            this.btn_Bai4.Text = "Bài 4";
             this.btn_Bai4.UseVisualStyleBackColor = false;
             this.btn_Bai4.Click += new System.EventHandler(this.btn_Bai4_Click);
             // 

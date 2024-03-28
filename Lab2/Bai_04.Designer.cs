@@ -34,11 +34,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tb_diemvan = new System.Windows.Forms.TextBox();
+            this.tb_diemtoan = new System.Windows.Forms.TextBox();
+            this.tb_sdt = new System.Windows.Forms.TextBox();
+            this.tb_hoten = new System.Windows.Forms.TextBox();
+            this.tb_mssv = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.listView1 = new System.Windows.Forms.ListView();
             this.column_mssv = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -52,6 +52,7 @@
             this.bt_xoa = new System.Windows.Forms.Button();
             this.bt_tinhdtb = new System.Windows.Forms.Button();
             this.bt_addsv = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -64,11 +65,11 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.tb_diemvan);
+            this.groupBox1.Controls.Add(this.tb_diemtoan);
+            this.groupBox1.Controls.Add(this.tb_sdt);
+            this.groupBox1.Controls.Add(this.tb_hoten);
+            this.groupBox1.Controls.Add(this.tb_mssv);
             this.groupBox1.Location = new System.Drawing.Point(44, 44);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(634, 275);
@@ -121,47 +122,47 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "label1";
             // 
-            // textBox5
+            // tb_diemvan
             // 
-            this.textBox5.Location = new System.Drawing.Point(512, 162);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 22);
-            this.textBox5.TabIndex = 4;
+            this.tb_diemvan.Location = new System.Drawing.Point(512, 162);
+            this.tb_diemvan.Name = "tb_diemvan";
+            this.tb_diemvan.Size = new System.Drawing.Size(100, 22);
+            this.tb_diemvan.TabIndex = 4;
             // 
-            // textBox4
+            // tb_diemtoan
             // 
-            this.textBox4.Location = new System.Drawing.Point(496, 61);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
-            this.textBox4.TabIndex = 3;
+            this.tb_diemtoan.Location = new System.Drawing.Point(496, 61);
+            this.tb_diemtoan.Name = "tb_diemtoan";
+            this.tb_diemtoan.Size = new System.Drawing.Size(100, 22);
+            this.tb_diemtoan.TabIndex = 3;
             // 
-            // textBox3
+            // tb_sdt
             // 
-            this.textBox3.Location = new System.Drawing.Point(241, 178);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 2;
+            this.tb_sdt.Location = new System.Drawing.Point(241, 178);
+            this.tb_sdt.Name = "tb_sdt";
+            this.tb_sdt.Size = new System.Drawing.Size(100, 22);
+            this.tb_sdt.TabIndex = 2;
             // 
-            // textBox2
+            // tb_hoten
             // 
-            this.textBox2.Location = new System.Drawing.Point(232, 121);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 1;
+            this.tb_hoten.Location = new System.Drawing.Point(232, 121);
+            this.tb_hoten.Name = "tb_hoten";
+            this.tb_hoten.Size = new System.Drawing.Size(100, 22);
+            this.tb_hoten.TabIndex = 1;
             // 
-            // textBox1
+            // tb_mssv
             // 
-            this.textBox1.Location = new System.Drawing.Point(210, 62);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 0;
+            this.tb_mssv.Location = new System.Drawing.Point(210, 62);
+            this.tb_mssv.Name = "tb_mssv";
+            this.tb_mssv.Size = new System.Drawing.Size(100, 22);
+            this.tb_mssv.TabIndex = 0;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.listView1);
             this.groupBox2.Location = new System.Drawing.Point(44, 375);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(634, 155);
+            this.groupBox2.Size = new System.Drawing.Size(674, 155);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "groupBox2";
@@ -177,7 +178,7 @@
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(6, 21);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(606, 111);
+            this.listView1.Size = new System.Drawing.Size(662, 128);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -272,11 +273,20 @@
             this.bt_addsv.UseVisualStyleBackColor = true;
             this.bt_addsv.Click += new System.EventHandler(this.bt_addsv_Click);
             // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(790, 352);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(404, 155);
+            this.richTextBox1.TabIndex = 3;
+            this.richTextBox1.Text = "";
+            // 
             // Bai_04
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1239, 542);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -298,11 +308,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tb_diemvan;
+        private System.Windows.Forms.TextBox tb_diemtoan;
+        private System.Windows.Forms.TextBox tb_sdt;
+        private System.Windows.Forms.TextBox tb_hoten;
+        private System.Windows.Forms.TextBox tb_mssv;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader column_mssv;
@@ -316,5 +326,6 @@
         private System.Windows.Forms.Button bt_xoa;
         private System.Windows.Forms.Button bt_tinhdtb;
         private System.Windows.Forms.Button bt_addsv;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
