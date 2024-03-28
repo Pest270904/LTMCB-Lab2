@@ -64,6 +64,12 @@
     <Compile Include="Bai_03.Designer.cs">
       <DependentUpon>Bai_03.cs</DependentUpon>
     </Compile>
+    <Compile Include="Bai_04.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bai_04.Designer.cs">
+      <DependentUpon>Bai_04.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Student.cs" />
     <EmbeddedResource Include="Bai_02.resx">
       <DependentUpon>Bai_02.cs</DependentUpon>
     </EmbeddedResource>
@@ -80,6 +87,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Bai_03.resx">
       <DependentUpon>Bai_03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bai_04.resx">
+      <DependentUpon>Bai_04.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
